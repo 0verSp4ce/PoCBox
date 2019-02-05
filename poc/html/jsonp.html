@@ -1,0 +1,13 @@
+<html>
+<body>
+	<center>
+		<h3>JSONP劫持</h3>
+		<hr>
+		<input type="text" name="title" required lay-verify="required" placeholder="请输入地址" autocomplete="off" class="layui-input" id="input" style="width: 500px;"><br>
+		<input type="text" name="title" required lay-verify="required" placeholder="请输入回调值" autocomplete="off" class="layui-input" id="cvalue" style="width: 200px;"><br>
+		<button class="layui-btn layui-btn-fluid" onclick="getPoC('jsonp');" style="width: 100px;">生成</button><br><br><hr><h3>PoC Code</h3><br>
+		<textarea placeholder="Code" class="layui-textarea" id="pocText" style="width: 1160px; height: 149px;"></textarea><br>
+		<a href="#" id="pocLink" target="_blank"><font size="3px">> 在线测试</font></a>
+	</center>
+</body>
+</html>
