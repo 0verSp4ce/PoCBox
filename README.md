@@ -7,6 +7,7 @@
 **PoCBox功能：** 生成漏洞验证代码（便于撰写报告）、在线测试（便于快速手工测试）
 
 > 作者：Vulkey_Chen 博客：gh0st.cn
+>
 > 团队：米斯特安全团队 Www.Hi-OurLife.Com
 
 ## PoCBox 版本更迭
