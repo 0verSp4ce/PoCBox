@@ -41,7 +41,7 @@
 
 **开源功能：**
 
-- JSONP劫持、CORS、Flash跨域资源读取、Google Hack语法生成
+- JSONP劫持、CORS、Flash跨域资源读取、Google Hack语法生成、URL测试字典生成、JavaScript URL跳转、302 URL跳转
 
 **结合DoraBox靶场演示 JSONP劫持漏洞 测试**
 
