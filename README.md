@@ -37,7 +37,7 @@
 
 ![pocbox](./images/pocbox_opensource.png)
 
-**搭建平台所需环境：**PHP
+**搭建平台所需环境：** PHP
 
 **开源功能：**
 
