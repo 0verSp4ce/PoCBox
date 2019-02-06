@@ -53,6 +53,20 @@ function getPoC(par){
 
 		HTTPRequest(pocText,corsUrl,0);
 		pocLink.attr("href",corsUrl);
+	}else if(par == "googlehack"){
+		googleHack(input,pocText);
+	}else if(par == "urlredirect"){
+		urlredirectUrl = "./poc/php/urlredirect.php?url=" + input;
+		HTTPRequest(pocText,urlredirectUrl,1);
+	}else if(par == "jsurl"){
+		var jsUrl = "./poc/php/jsurl.php?url=";
+		jsUrl += input;
+		HTTPRequest(pocText,jsUrl,0);
+		pocLink.text(window.location + jsUrl.replace("./",""));
+	}else if(par == "302url"){
+		var url302 = "./poc/php/302url.php?url=";
+		url302 += input;
+		pocLink.text(window.location + url302.replace("./",""));
 	}
 }
 
