@@ -9,6 +9,8 @@
 > 作者：Vulkey_Chen 博客：gh0st.cn
 >
 > 团队：米斯特安全团队 Www.Hi-OurLife.Com
+>
+> 注意：平台不关注安全漏洞问题，也建议各位搭建的时候选好服务和域名！！！
 
 ## PoCBox 版本更迭
 
