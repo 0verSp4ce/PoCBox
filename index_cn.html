@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>PoCBox - 漏洞测试验证辅助平台</title>
+<link rel="stylesheet" href="./layui/css/layui.css">
+<link rel="stylesheet" href="./static/index.css">
+<link rel="icon" href="./favicon.ico" type="image/x-icon" />
+</head>
+<script src="./static/index.js"></script>
+<script src="./static/jquery.min.js"></script>
+<body class="layui-layout-body">
+<div class="layui-layout layui-layout-admin">
+  <div class="layui-header">
+    <div class="layui-logo"><img style="width: 40px;" src="./static/pocbox.png"> <font style="color: white">PoCBox | MSTSEC</font></div>
+    <ul class="layui-nav layui-layout-right">
+      <li class="layui-nav-item">
+        <a href="./index.html" title="切换到英文">
+          <img src="./static/key.png" class="layui-nav-img">
+          Vulkey_Chen
+        </a>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="layui-side layui-bg-black">
+    <div class="layui-side-scroll">
+      <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+      <ul class="layui-nav layui-nav-tree"  lay-filter="test">
+        <li class="layui-nav-item layui-nav-itemed">
+          <a href="javascript:;">漏洞测试</a>
+          <dl class="layui-nav-child">
+            <dd><a href="./poc/html/jsonp.html" onclick="openPage(this.href); return false;">JSONP劫持</a></dd>
+            <dd><a href="./poc/html/cors.html" onclick="openPage(this.href); return false;">CORS跨域资源读取</a></dd>
+            <dd><a href="./poc/html/swf.html" onclick="openPage(this.href); alert('此处打开为SWF文件'); return false; ">Flash跨域资源读取</a></dd>
+            <dd><a href="./poc/html/jsurl.html" onclick="openPage(this.href); return false; ">JavaScript URL跳转</a></dd>
+            <dd><a href="./poc/html/302url.html" onclick="openPage(this.href); return false; ">302 URL跳转</a></dd>
+          </dl>
+        </li>
+        <li class="layui-nav-item layui-nav-itemed">
+          <a href="javascript:;">测试字典</a>
+            <dl class="layui-nav-child">
+              <dd><a href="./poc/html/URLRedirect.html" onclick="openPage(this.href); return false;">URL类</a></dd>
+            </dl>
+        </li>
+        <li class="layui-nav-item layui-nav-itemed">
+          <a href="javascript:;">其他</a>
+            <dl class="layui-nav-child">
+              <dd><a href="./poc/html/google_hack.html" onclick="openPage(this.href); return false;">Google Hack</a></dd>
+            </dl>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="layui-body" id="pocTest" style="padding: 15px;">
+    <!-- 内容主体区域 -->
+    <center><h3><b>PoCBox - 漏洞测试验证辅助平台</b><br><br>Author: [Vulkey_Chen] <br><br> Blog: [gh0st.cn] <br><br>Team: [MSTSEC 米斯特安全 | Www.Hi-OurLife.Com] <br><br> <img style="width: 250px;" src="./static/mstlogo.png"></h3></center>
+  </div>
+  
+  <div class="layui-footer">
+    <!-- 底部固定区域 -->
+    © Powered By Vulkey_Chen | MST.SEC Www.Hi-OurLife.Com
+  </div>
+</div>
+<script src="./layui/layui.all.js"></script>
+<script>
+//由于模块都一次性加载，因此不用执行 layui.use() 来加载对应模块，直接使用即可：
+;!function(){
+  var layer = layui.layer
+  ,form = layui.form;
+  
+  layer.msg('欢迎来到PoCBox平台～');
+}();
+</script> 
+</body>
+</html>

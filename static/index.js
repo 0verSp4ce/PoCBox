@@ -1,8 +1,3 @@
-/*
-code timeline:
-v1.0: 使用的是JS原生代码和jQuery混搭
-v1.1: 全面转向jQuery（真香）
-*/
 function HTTPRequest(doc,urladdress,isHTML){
 	$.ajax({
 		type: "GET",
@@ -12,7 +7,7 @@ function HTTPRequest(doc,urladdress,isHTML){
 			changePage(doc,result,isHTML);
 		},
 		error: function() {
-			alert("异常!");
+			alert("Error!");
 		}
 	});
 }
@@ -87,14 +82,14 @@ function googleHack(url,doc){
 		"https://www.google.com/search?q=site:" + v + "+ext:php+intitle:phpinfo+%22published+by+the+PHP+Group%22"
 	)
 	var txt = new Array(
-		"目录遍历漏洞",
-		"配置文件泄露",
-		"数据库文件泄露",
-		"日志文件泄露",
-		"备份和历史文件",
-		"登录页面",
-		"SQL错误",
-		"公开文件信息",
+		"Directory Traversal",
+		"Config File Leak",
+		"Data File Leak",
+		"Log File Leak",
+		"Backup && History",
+		"Login Page",
+		"SQL Error",
+		"Public File",
 		"phpinfo()"
 	)
 
