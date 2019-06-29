@@ -1,0 +1,14 @@
+<html>
+<body>
+    <center>
+        <h3>XXE for xls/xlsx/docx</h3>
+        <hr>
+        <input type="text" name="title" required lay-verify="required" placeholder="请求的地址" autocomplete="off" class="layui-input" id="input" style="width: 500px;"><br>
+        <input name="method" type="radio" value="get" id="xls"> xls 
+        <input name="method" type="radio" value="post" id="xlsx"> xlsx
+        <input name="method" type="radio" value="post" id="docx"> docx<br><br>
+        <button class="layui-btn layui-btn-fluid" onclick="getPoC('xxe');" style="width: 100px;">生成</button><br><br>
+        <font size="3px">PoC Address: <p id="pocLink"></p></font>
+    </center>
+</body>
+</html>

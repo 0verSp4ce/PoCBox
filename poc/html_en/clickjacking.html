@@ -1,0 +1,17 @@
+<html>
+<body>
+    <center>
+        <h3>ClickJacking</h3>
+        <hr>
+        <input type="text" name="title" required lay-verify="required" placeholder="URL" autocomplete="off" class="layui-input" id="input" style="width: 500px;"><br><p>Button Size</p>
+        Width: <input type="text" id="width" placeholder="width"> Height: <input type="text" id="height" placeholder="height"><br><p>Button Position</p>
+        Distance on the top: <input type="text" id="top" placeholder="Distance on the top"> Distance on the left: <input type="text" id="left" placeholder="Distance on the left">
+        <br><br>
+        <input name="method" type="checkbox" id="ishidden"> Hide Iframe(Default: NO)
+        <br><br>
+        <button class="layui-btn layui-btn-fluid" onclick="getPoC('clickjacking');" style="width: 100px;">Generate</button><br><br><hr><h3>PoC Code</h3><br>
+        <textarea placeholder="Code" class="layui-textarea" id="pocText" style="width: 1160px; height: 149px;"></textarea><br>
+        <a href="#" id="pocLink" target="_blank"><font size="3px">> Online Test</font></a>
+    </center>
+</body>
+</html>

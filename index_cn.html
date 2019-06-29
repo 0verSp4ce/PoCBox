@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>PoCBox - 漏洞测试验证辅助平台</title>
+<title>PoCBox - PoC在线生成&验证平台</title>
 <link rel="stylesheet" href="./layui/css/layui.css">
 <link rel="stylesheet" href="./static/index.css">
 <link rel="icon" href="./favicon.ico" type="image/x-icon" />
@@ -31,23 +31,29 @@
         <li class="layui-nav-item layui-nav-itemed">
           <a href="javascript:;">漏洞测试</a>
           <dl class="layui-nav-child">
-            <dd><a href="./poc_cn/html/jsonp.html" onclick="openPage(this.href); return false;">JSONP劫持</a></dd>
-            <dd><a href="./poc_cn/html/cors.html" onclick="openPage(this.href); return false;">CORS跨域资源读取</a></dd>
-            <dd><a href="./poc_cn/html/swf.html" onclick="openPage(this.href); alert('此处打开为SWF文件'); return false; ">Flash跨域资源读取</a></dd>
-            <dd><a href="./poc_cn/html/jsurl.html" onclick="openPage(this.href); return false; ">JavaScript URL跳转</a></dd>
-            <dd><a href="./poc_cn/html/302url.html" onclick="openPage(this.href); return false; ">302 URL跳转</a></dd>
+            <dd><a href="./poc/html_cn/jsonp.html" onclick="openPage(this.href); return false;">JSONP劫持</a></dd>
+            <dd><a href="./poc/html_cn/cors.html" onclick="openPage(this.href); return false;">CORS跨域资源读取</a></dd>
+            <dd><a href="./poc/html_cn/cswsh.html" onclick="openPage(this.href); return false; ">Websocket跨域劫持</a></dd>
+            <dd><a href="./poc/html_cn/swf.html" onclick="openPage(this.href); alert('此处打开为SWF文件'); return false; ">Flash跨域资源读取</a></dd>
+            <dd><a href="./poc/html_cn/clickjacking.html" onclick="openPage(this.href); return false; ">点击劫持（按钮）</a></dd>
+            <dd><a href="./poc/html_cn/jsurl.html" onclick="openPage(this.href); return false; ">JavaScript URL跳转</a></dd>
+            <dd><a href="./poc/html_cn/302url.html" onclick="openPage(this.href); return false; ">302 URL跳转</a></dd>
+            <dd><a href="./poc/html_cn/uploadfile.html" onclick="openPage(this.href); return false; ">文件上传</a></dd>
+            <dd><a href="./poc/html_cn/xxe.html" onclick="openPage(this.href); return false; ">XXE</a></dd>
           </dl>
         </li>
         <li class="layui-nav-item layui-nav-itemed">
           <a href="javascript:;">测试字典</a>
             <dl class="layui-nav-child">
-              <dd><a href="./poc_cn/html/URLRedirect.html" onclick="openPage(this.href); return false;">URL类</a></dd>
+              <dd><a href="./poc/html_cn/URLRedirect.html" onclick="openPage(this.href); return false;">URL类</a></dd>
             </dl>
         </li>
         <li class="layui-nav-item layui-nav-itemed">
           <a href="javascript:;">其他</a>
             <dl class="layui-nav-child">
-              <dd><a href="./poc_cn/html/google_hack.html" onclick="openPage(this.href); return false;">Google Hack</a></dd>
+              <dd><a href="./poc/html_cn/searchengines.html" onclick="openPage(this.href); return false;">搜索引擎SITE语法</a></dd>
+              <dd><a href="./poc/html_cn/google_hack.html" onclick="openPage(this.href); return false;">Google Hack</a></dd>
+              <dd><a href="./caimima/index.html" onclick='$("#pocTest").html("<iframe src="+this.href+">"); return false;'>Caimima</a></dd>
             </dl>
         </li>
       </ul>
@@ -56,7 +62,7 @@
   
   <div class="layui-body" id="pocTest" style="padding: 15px;">
     <!-- 内容主体区域 -->
-    <center><h3><b>PoCBox - 漏洞测试验证辅助平台</b><br>Author: [Vulkey_Chen] <br> Blog: [gh0st.cn] <br>Team: [MSTSEC 米斯特安全 | Www.Hi-OurLife.Com] <br><br> <img style="width: 250px;" src="./static/mstlogo.png"></h3></center>
+    <center><h3><b>PoCBox - PoC在线生成&验证平台</b><br>Author: [Vulkey_Chen] <br> Blog: [gh0st.cn] <br>Team: [MSTSEC 米斯特安全 | Www.Hi-OurLife.Com] <br><br> <img style="width: 250px;" src="./static/mstlogo.png"></h3></center>
   </div>
   
   <div class="layui-footer">

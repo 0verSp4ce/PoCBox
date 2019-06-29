@@ -26,27 +26,33 @@
   
   <div class="layui-side layui-bg-black">
     <div class="layui-side-scroll">
-      <ul class="layui-nav layui-nav-tree" lay-filter="test">
+      <ul class="layui-nav layui-nav-tree"  lay-filter="test">
         <li class="layui-nav-item layui-nav-itemed">
           <a href="javascript:;">Vulnerability</a>
           <dl class="layui-nav-child">
-            <dd><a href="./poc/html/jsonp.html" onclick="openPage(this.href); return false;">JSONP Hijacking</a></dd>
-            <dd><a href="./poc/html/cors.html" onclick="openPage(this.href); return false;">CORS Hijacking</a></dd>
-            <dd><a href="./poc/html/swf.html" onclick="openPage(this.href); alert('此处打开为SWF文件'); return false; ">Flash Content Hijacking</a></dd>
-            <dd><a href="./poc/html/jsurl.html" onclick="openPage(this.href); return false; ">JavaScript URL Redirect</a></dd>
-            <dd><a href="./poc/html/302url.html" onclick="openPage(this.href); return false; ">302 URL Redirect</a></dd>
+            <dd><a href="./poc/html_en/jsonp.html" onclick="openPage(this.href); return false;">JSONP Hijacking</a></dd>
+            <dd><a href="./poc/html_en/cors.html" onclick="openPage(this.href); return false;">CORS Hijacking</a></dd>
+            <dd><a href="./poc/html_en/cswsh.html" onclick="openPage(this.href); return false; ">Websocket Hijacking</a></dd>
+            <dd><a href="./poc/html_en/swf.html" onclick="openPage(this.href); alert('此处打开为SWF文件'); return false; ">Flash Content Hijacking</a></dd>
+            <dd><a href="./poc/html_en/clickjacking.html" onclick="openPage(this.href); return false; ">Clickjacking(Just Button)</a></dd>
+            <dd><a href="./poc/html_en/jsurl.html" onclick="openPage(this.href); return false; ">JavaScript URL Redirect</a></dd>
+            <dd><a href="./poc/html_en/302url.html" onclick="openPage(this.href); return false; ">302 URL Redirect</a></dd>
+            <dd><a href="./poc/html_en/uploadfile.html" onclick="openPage(this.href); return false; ">Upload File</a></dd>
+            <dd><a href="./poc/html_en/xxe.html" onclick="openPage(this.href); return false; ">XXE</a></dd>
           </dl>
         </li>
         <li class="layui-nav-item layui-nav-itemed">
           <a href="javascript:;">Fuzz Dict</a>
             <dl class="layui-nav-child">
-              <dd><a href="./poc/html/URLRedirect.html" onclick="openPage(this.href); return false;">URL</a></dd>
+              <dd><a href="./poc/html_en/URLRedirect.html" onclick="openPage(this.href); return false;">URL</a></dd>
             </dl>
         </li>
         <li class="layui-nav-item layui-nav-itemed">
           <a href="javascript:;">Others</a>
             <dl class="layui-nav-child">
-              <dd><a href="./poc/html/google_hack.html" onclick="openPage(this.href); return false;">Google Hack</a></dd>
+              <dd><a href="./poc/html_en/searchengines.html" onclick="openPage(this.href); return false;">SearchEngines Site</a></dd>
+              <dd><a href="./poc/html_en/google_hack.html" onclick="openPage(this.href); return false;">Google Hack</a></dd>
+              <dd><a href="./caimima/index.html" onclick='$("#pocTest").html("<iframe src="+this.href+">"); return false;'>Caimima</a></dd>
             </dl>
         </li>
       </ul>

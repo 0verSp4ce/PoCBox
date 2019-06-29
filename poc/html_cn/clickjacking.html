@@ -1,0 +1,17 @@
+<html>
+<body>
+    <center>
+        <h3>ClickJacking 点击劫持</h3>
+        <hr>
+        <input type="text" name="title" required lay-verify="required" placeholder="请输入地址" autocomplete="off" class="layui-input" id="input" style="width: 500px;"><br><p>按钮尺寸</p>
+        宽度: <input type="text" id="width" placeholder="请输入按钮宽度"> 长度: <input type="text" id="height" placeholder="请输入按钮长度"><br><p>按钮位置</p>
+        距离最顶: <input type="text" id="top" placeholder="请输入按钮距离最顶位置"> 距离最左: <input type="text" id="left" placeholder="请输入按钮距离最左位置">
+        <br><br>
+        <input name="method" type="checkbox" id="ishidden"> 隐藏IFRAME(默认为否)
+        <br><br>
+        <button class="layui-btn layui-btn-fluid" onclick="getPoC('clickjacking');" style="width: 100px;">生成</button><br><br><hr><h3>PoC Code</h3><br>
+        <textarea placeholder="Code" class="layui-textarea" id="pocText" style="width: 1160px; height: 149px;"></textarea><br>
+        <a href="#" id="pocLink" target="_blank"><font size="3px">> 在线测试</font></a>
+    </center>
+</body>
+</html>

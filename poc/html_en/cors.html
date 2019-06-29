@@ -1,0 +1,16 @@
+<html>
+<body>
+    <center>
+        <h3>CORS Hijacking</h3>
+        <hr>
+        <input type="text" name="title" required lay-verify="required" placeholder="URL" autocomplete="off" class="layui-input" id="input" style="width: 500px;"><br>
+        <input type="hidden" name="title" required lay-verify="required" placeholder="POST Data" autocomplete="off" class="layui-input" id="data" style="width: 500px;"><br>
+        <input type="hidden" name="title" required lay-verify="required" placeholder="Content Type" autocomplete="off" class="layui-input" id="ct" style="width: 500px;"><br>
+        <input name="method" type="radio" value="get" id="gMethod" onclick="document.getElementById('data').type='hidden'"> GET 
+        <input name="method" type="radio" value="post" id="pMethod" onclick="document.getElementById('data').type='text';document.getElementById('ct').type='text'"> POST<br><br>
+        <button class="layui-btn layui-btn-fluid" onclick="getPoC('cors');" style="width: 100px;">Generate</button><br><br><hr><h3>PoC Code</h3><br>
+        <textarea placeholder="Code" class="layui-textarea" id="pocText" style="width: 1160px; height: 149px;"></textarea><br>
+        <a href="#" id="pocLink" target="_blank"><font size="3px">> Online Test</font></a>
+    </center>
+</body>
+</html>

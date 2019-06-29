@@ -33,6 +33,15 @@
 2. 修复交互类攻击PoC的目标带有&符号无法正常在线测试（将URL地址进行URL编码再传输 感谢：Vulkey_Chen）
 3. 增加漏洞测试模块：点击劫持（按钮）、JavaScript URL跳转、302 URL跳转
 
+### PoCBox V3.0.0 Beta
+
+1. 增加漏洞测试模块：XXE for xls|xlsx|doc、文件上传、
+2. 增加其他类模块：搜索引擎SITE语法生成
+
+### PoCBox V3.0.1 Beta
+
+1. 修复XXE漏洞测试模块造成的RCE漏洞（感谢：Vulkey_Chen）
+
 ## PoCBox 开源
 
 开发出来不少时间了，也内测了一段时间，现在放出开源版本，如下图所示：
