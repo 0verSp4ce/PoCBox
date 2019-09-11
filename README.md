@@ -12,6 +12,24 @@
 >
 > 注意：平台不关注安全漏洞问题，也建议各位搭建的时候选好服务和域名！！！
 
+## 400Star Flag
+
+地址：http://pocbox.pwnhoo.com:68/
+
+### Docker
+
+拉镜像
+
+```shell
+docker pull registry.cn-hangzhou.aliyuncs.com/pocbox/pocbox:1.0
+```
+
+运行
+
+```shell
+docker container run -d -p 本地端口:80 registry.cn-hangzhou.aliyuncs.com/pocbox/pocbox:1.0
+```
+
 ## PoCBox 版本更迭
 
 关于PoCBox的版本更迭记录如下。
