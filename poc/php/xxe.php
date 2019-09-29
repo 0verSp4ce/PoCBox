@@ -7,7 +7,7 @@
     if($type == "xls"){
         $zipfile = "../tmp/{$filename}.xls";
     }elseif($type == "xlsx"){
-        $zipfile = "../tmp/{$filename}.xls";
+        $zipfile = "../tmp/{$filename}.xlsx";
     }elseif($type == "docx"){
         $zipfile = "../tmp/{$filename}.docx";
     }else{
