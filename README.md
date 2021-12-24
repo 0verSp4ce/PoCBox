@@ -49,7 +49,7 @@ docker container run -d -p 本地端口:80 registry.cn-hangzhou.aliyuncs.com/poc
 
 ### PoCBox V3.0.0 Beta
 
-1. 增加漏洞测试模块：XXE for xls|xlsx|doc、文件上传、
+1. 增加漏洞测试模块：XXE for xls|xlsx|doc、文件上传
 2. 增加其他类模块：搜索引擎SITE语法生成
 
 ### PoCBox V3.0.1 Beta
