@@ -8,13 +8,9 @@
 
 > 作者：Vulkey_Chen 博客：gh0st.cn
 >
-> 团队：米斯特安全团队 Www.Hi-OurLife.Com
+> 团队：凌驭空间安全团队 OverSpace.Cn
 >
 > 注意：平台不关注安全漏洞问题，也建议各位搭建的时候选好服务和域名！！！
-
-## 400Star Flag
-
-地址：http://pocbox.pwnhoo.com:68/
 
 ### Docker
 
@@ -83,4 +79,4 @@ Youtube：<https://youtu.be/1Q5Q_8gObwU>
 
 ## 最后
 
-感谢米斯特安全所有核心成员的协助内测。祝各位新年快乐！
+感谢凌驭空间安全团队所有核心成员的协助内测。祝各位新年快乐！
