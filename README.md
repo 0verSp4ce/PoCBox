@@ -69,14 +69,6 @@ docker container run -d -p 本地端口:80 registry.cn-hangzhou.aliyuncs.com/poc
 - 测试：JSONP劫持、CORS、Flash跨域资源读取、Google Hack语法生成、URL测试字典生成、JavaScript URL跳转、302 URL跳转
 - 中英文语言切换（默认为英文）
 
-**结合DoraBox靶场演示测试**
-
-Youtube：<https://youtu.be/1Q5Q_8gObwU>
-
-![pocbox](./images/pocbox.gif)
-
-开源地址：https://github.com/gh0stkey/PoCBox
-
 ## 最后
 
 感谢凌驭空间安全团队所有核心成员的协助内测。祝各位新年快乐！
